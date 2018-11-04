@@ -1,0 +1,116 @@
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 48px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 3px 3px #ccc;
+	font-size: 14px;
+	z-index: 1;
+}
+
+.nav > ul {
+	max-width: 900px;
+	margin:0 auto;
+}
+
+.nav > ul > li {
+	float: left;
+	width: 60px;
+	text-align: center;
+	line-height: 48px;
+}
+.nav > ul > li.current {
+	border-bottom: 2px solid #409eff;
+}
+
+.main {
+	margin-top:48px;
+}
+
+.style-one,
+.style-two {
+	margin-bottom: .5em;
+}
+.style-one > .title,
+.style-two > .title{
+	font-size: 14px;
+	line-height: 3em;
+	font-weight: 400;
+	color: #333;
+}
+
+.style-one > .photo > ul {
+	display: flex;
+	flex-direction: row;
+}
+.style-one > .photo img,
+.style-two > .photo img {
+	width: 100%;
+}
+.style-one > .photo > ul > li{
+	flex: 1;
+	padding-right: .5em;
+}
+.style-one > .photo > ul > li:last-child {
+	padding-right: 0;
+}
+.style-one > .info,
+.style-two > .info {
+	display: flex;	
+}
+.style-two > .info  {
+	position: absolute;
+}
+.style-one > .info > div ,
+.style-two > .info > div{
+	flex: 1;
+}
+
+.style-one > .info > div.right,
+.style-two > .info > div.right {
+	text-align: right;
+}
+
+
+.style-two {
+	position: relative;
+}
+.style-two::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.style-two > .title ,
+.style-two > .info {
+	position: absolute;
+	width: 66%;
+}
+.style-two > .info {
+	bottom: 0;
+}
+.style-two > .photo{
+	float: right;
+	width: 33.333%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
